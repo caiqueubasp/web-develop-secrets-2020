@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Placing JS below all other HTML - Default 101 Approach</h1>
+    <h2>Changed by external1.js</h2>
+    <h3>Changed by external2.js</h3>
+
+    <script>
+      console.log("inline 1");
+    </script>
+    <script async src="external1.js"></script>
+    <script>
+      console.log("inline 2");
+    </script>
+    <script async src="external2.js"></script>
+    <script>
+      console.log("inline 3");
+    </script>
+  </body>
+</html>
